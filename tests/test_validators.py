@@ -320,7 +320,7 @@ class TestValidateReservationTime:
     def test_hora_que_termina_exactamente_a_las_17_es_valida(self):
         # Arrange
         reservation_time = time(16, 0)
-        duration = 60
+        duration = 30
 
         # Act
         result = validate_reservation_time(reservation_time, duration)
